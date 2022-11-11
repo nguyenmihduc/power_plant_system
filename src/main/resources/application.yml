@@ -1,0 +1,18 @@
+spring:
+    datasource:
+        url: ${MYSQL_CONNECTION}
+        username: ${MYSQL_USERNAME}
+        password: ${MYSQL_PASSWORD}
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+
+jwtSecret: jimmydeptrai
+jwtExpirationMs: 1800000
+    
+server:
+    error:
+        include-binding-errors: always
+        include-message: always
